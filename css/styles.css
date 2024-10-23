@@ -90,6 +90,15 @@ button, a {
   color: var(--grayish-blue);
 }
 
+.profile_section{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: auto;
+  width: 100%;
+  align-items: center;
+}
+
 
 
 
