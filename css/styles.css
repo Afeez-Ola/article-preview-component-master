@@ -19,9 +19,14 @@
 }
 
 body {
- background: var(--light-grayish-blue);
- color: var(--grayish-blue);
+ background: var(--grayish-blue);
+ color: black;
  -webkit-font-smoothing: antialiased;
+ min-height: 100vh;
+ display: flex;
+ /* flex-direction: column; */
+ justify-content: center;
+ align-items: center;
 }
 
 body, input, button {
@@ -29,8 +34,31 @@ body, input, button {
  font-family: var(--font-family);
 }
 
-button {
+button, a {
  cursor: pointer;
 }
+
+.container{
+  background: var(--light-grayish-blue);
+  max-width: 60rem;
+  /* margin: auto; */
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image_section, .note_section{
+  flex: 1;
+}
+
+.image_section, .image_section img{
+  width: 100%;
+  margin: auto;
+}
+
+
+
 
 
