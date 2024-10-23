@@ -96,7 +96,32 @@ button, a {
   gap: 1rem;
   margin: auto;
   width: 100%;
+  justify-content: space-between;
   align-items: center;
+}
+
+.profile{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.profile img{
+      width: 3rem;
+    border-radius: 50%;
+}
+
+.name_and_date{
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.name{
+  color: var(--very-dark-grayish-blue);
+  font-weight: var(--font-weight-700);
 }
 
 
