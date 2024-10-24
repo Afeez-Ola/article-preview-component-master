@@ -70,11 +70,6 @@ a {
 .note_section {
   width: 100%;
   margin: 2rem auto 1rem;
-  /* display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: baseline;
-  gap: 2.5rem; */
 }
 
 .note {
@@ -179,20 +174,19 @@ a {
     width: 40%;
   }
   .social::after {
-        position: absolute;
-        content: '';
-        top: 100%;
-        left: 50%;
-        margin-left: -10px;
-        border-width: 10px;
-        border-style: solid;
-        border-color: var(--very-dark-grayish-blue) transparent transparent;
-    }
-
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--very-dark-grayish-blue) transparent transparent;
+  }
 }
 
 @media screen and (min-width: 50rem) {
-  .social{
+  .social {
     left: 37.8rem;
     bottom: 25rem;
   }
