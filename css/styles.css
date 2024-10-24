@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-:root{
+:root {
   --very-dark-grayish-blue: hsl(217, 19%, 35%);
---desaturated-dark-blue: hsl(214, 17%, 51%);
---grayish-blue: hsl(212, 23%, 69%);
---light-grayish-blue: hsl(210, 46%, 95%);
---font-size: 0.813rem;
---font-weight-500: 500;
---font-weight-700: 700;
---font-family: "Manrope", sans-serif;
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsla(212, 23%, 69%, 1);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+  --font-size: 0.813rem;
+  --font-weight-500: 500;
+  --font-weight-700: 700;
+  --font-family: 'Manrope', sans-serif;
 }
-
 
 * {
   margin: 0;
@@ -19,26 +18,29 @@
 }
 
 body {
- background: var(--light-grayish-blue);
- color: black;
- -webkit-font-smoothing: antialiased;
- min-height: 100vh;
- display: flex;
- /* position: relative; */
- justify-content: center;
- align-items: center;
+  background: var(--light-grayish-blue);
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  /* position: relative; */
+  justify-content: center;
+  align-items: center;
 }
 
-body, input, button {
- font-size: var(--font-size);
- font-family: var(--font-family);
+body,
+input,
+button {
+  font-size: var(--font-size);
+  font-family: var(--font-family);
 }
 
-button, a {
- cursor: pointer;
+button,
+a {
+  cursor: pointer;
 }
 
-.container{
+.container {
   background: white;
   max-width: 60rem;
   border-radius: 1rem;
@@ -49,19 +51,20 @@ button, a {
   align-items: center;
 }
 
-.image_section, .note_section{
+.image_section,
+.note_section {
   flex: 1;
 }
 
-.image_section, .image_section img{
+.image_section,
+.image_section img {
   width: 100%;
   margin: auto;
-  border-radius: 1rem 1rem 0 0 ;
+  border-radius: 1rem 1rem 0 0;
   height: auto;
 }
 
-
-.note_section{
+.note_section {
   width: 80%;
   margin: 2rem auto 1rem;
   display: flex;
@@ -71,26 +74,26 @@ button, a {
   gap: 2.5rem;
 }
 
-.note{
+.note {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
 }
 
-.note h3{
-  font-size: 1.4rem;
+.note h3 {
+  font-size: 1rem;
   color: var(--very-dark-grayish-blue);
   font-weight: var(--font-weight-700);
 }
 
-.note p{
-  font-size: 1rem;
+.note p {
+  font-size: 0.86rem;
   font-weight: var(--font-weight-500);
   color: var(--grayish-blue);
 }
 
-.profile_section{
+.profile_section {
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -100,31 +103,30 @@ button, a {
   align-items: center;
 }
 
-.profile{
+.profile {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
 
-.profile img{
-      width: 3rem;
-    border-radius: 50%;
+.profile img {
+  width: 3rem;
+  border-radius: 50%;
 }
 
-.name_and_date{
+.name_and_date {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 0.2rem;
   align-items: baseline;
   justify-content: center;
 }
 
-.name{
+.name {
   color: var(--very-dark-grayish-blue);
   font-weight: var(--font-weight-700);
 }
 
-
-
-
-
+.date{
+  color: var(--grayish-blue);
+}
