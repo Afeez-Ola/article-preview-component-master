@@ -130,3 +130,9 @@ a {
 .date{
   color: var(--grayish-blue);
 }
+
+.share_image{
+  background: var(--desaturated-dark-blue);
+  padding: 0.7rem;
+  border-radius: 50%;
+}
