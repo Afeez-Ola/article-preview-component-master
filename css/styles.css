@@ -23,7 +23,6 @@ body {
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
   display: flex;
-  /* position: relative; */
   justify-content: center;
   align-items: center;
 }
@@ -42,7 +41,7 @@ a {
 
 .container {
   background: white;
-  max-width: 60rem;
+  max-width: 30rem;
   border-radius: 1rem;
   width: 80%;
   display: flex;
@@ -132,7 +131,7 @@ a {
 }
 
 .share_image{
-  background: var(--desaturated-dark-blue);
+  background: var(--light-grayish-blue);
   padding: 0.7rem;
   border-radius: 50%;
 }
