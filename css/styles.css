@@ -164,10 +164,18 @@ a {
   }
 }
 
-.profile {
-  position: relative;
+.social{
+  display: block;
 }
 
-.social {
+.profile_section{
   display: none;
 }
+
+/* .footer:hover .profile_section{
+  display: none;
+}
+
+.footer:hover .social{
+  display: block;
+}  */

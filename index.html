@@ -16,21 +16,7 @@
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
-    <script>
-      $(document).ready(function () {
-        $('social').hide()
-        $('.profile').hover(
-          function () {
-            $(this).hide()
-            $('.social').show
-          },
-          function () {
-            $(this).show()
-            $('social').hide()
-          }
-        )
-      })
-    </script>
+
     <title>Frontend Mentor | Article preview component</title>
   </head>
   <body>
@@ -48,37 +34,39 @@
             you make any room feel complete.
           </p>
         </div>
-        <div class="profile_section">
-          <div class="profile">
-            <img
-              src="/images/avatar-michelle.jpg"
-              alt="avatar-michelle"
-              class="profile_image"
-            />
-            <div class="name_and_date">
-              <p class="name">Michelle Appleton</p>
-              <p class="date">28 Jun 2020</p>
+        <div class="footer">
+          <div class="profile_section">
+            <div class="profile">
+              <img
+                src="/images/avatar-michelle.jpg"
+                alt="avatar-michelle"
+                class="profile_image"
+              />
+              <div class="name_and_date">
+                <p class="name">Michelle Appleton</p>
+                <p class="date">28 Jun 2020</p>
+              </div>
             </div>
+            <img
+              src="images/icon-share.svg"
+              alt="icon-share"
+              class="share_image"
+            />
           </div>
-          <img
-            src="images/icon-share.svg"
-            alt="icon-share"
-            class="share_image"
-          />
-        </div>
 
-        <div class="social">
-          <h3>Share</h3>
-          <div class="scoial_links">
-            <img src="images/icon-facebook.svg" alt="icon-facebook" />
-            <img src="images/icon-twitter.svg" alt="icon-twitter" />
-            <img src="images/icon-pinterest.svg" alt="icon-pinterest" />
+          <div class="social">
+            <h3>Share</h3>
+            <div class="scoial_links">
+              <img src="images/icon-facebook.svg" alt="icon-facebook" />
+              <img src="images/icon-twitter.svg" alt="icon-twitter" />
+              <img src="images/icon-pinterest.svg" alt="icon-pinterest" />
+            </div>
+            <img
+              src="images/icon-share.svg"
+              alt="icon-share"
+              class="share_image"
+            />
           </div>
-          <img
-            src="images/icon-share.svg"
-            alt="icon-share"
-            class="share_image"
-          />
         </div>
       </div>
     </main>
