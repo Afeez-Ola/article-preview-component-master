@@ -29,7 +29,7 @@ toggleLink.addEventListener('click', (e) => {
             content.style.display = 'none'; 
             anotherContent.style.display = 'flex'; 
             profileSection.style.backgroundColor = "white";
-            content.style.width = "40%"
+            content.style.width = "30%"
         }
     }
 });

@@ -174,7 +174,7 @@ a {
     position: absolute;
     display: flex;
     bottom: 24rem;
-    left: 29rem;
+    left: 30.5rem;
     border-radius: 0.6rem;
     width: 40%;
   }
@@ -182,13 +182,20 @@ a {
         position: absolute;
         content: '';
         top: 100%;
-        left: 52%;
+        left: 50%;
         margin-left: -10px;
         border-width: 10px;
         border-style: solid;
         border-color: var(--very-dark-grayish-blue) transparent transparent;
     }
 
+}
+
+@media screen and (min-width: 50rem) {
+  .social{
+    left: 37.8rem;
+    bottom: 25rem;
+  }
 }
 .profile_section {
   border-radius: 0 0 1rem 1rem;
@@ -205,7 +212,9 @@ a {
 .social h3 {
   text-transform: uppercase;
   color: var(--light-grayish-blue);
-  font-size: 1rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  font-weight: var(--font-weight-500);
 }
 
 .social_links {
