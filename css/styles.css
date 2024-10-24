@@ -163,3 +163,11 @@ a {
     
   }
 }
+
+.profile {
+  position: relative;
+}
+
+.social {
+  display: none;
+}

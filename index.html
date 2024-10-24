@@ -11,13 +11,31 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="css/styles.css" />
-
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $('social').hide()
+        $('.profile').hover(
+          function () {
+            $(this).hide()
+            $('.social').show
+          },
+          function () {
+            $(this).show()
+            $('social').hide()
+          }
+        )
+      })
+    </script>
     <title>Frontend Mentor | Article preview component</title>
   </head>
   <body>
     <main class="container">
-      <div class="image_section">
-      </div>
+      <div class="image_section"></div>
       <div class="note_section">
         <div class="note">
           <h3>
@@ -41,6 +59,20 @@
               <p class="name">Michelle Appleton</p>
               <p class="date">28 Jun 2020</p>
             </div>
+          </div>
+          <img
+            src="images/icon-share.svg"
+            alt="icon-share"
+            class="share_image"
+          />
+        </div>
+
+        <div class="social">
+          <h3>Share</h3>
+          <div class="scoial_links">
+            <img src="images/icon-facebook.svg" alt="icon-facebook" />
+            <img src="images/icon-twitter.svg" alt="icon-twitter" />
+            <img src="images/icon-pinterest.svg" alt="icon-pinterest" />
           </div>
           <img
             src="images/icon-share.svg"
