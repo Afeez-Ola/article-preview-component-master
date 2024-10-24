@@ -69,7 +69,7 @@ a {
 }
 
 .note_section {
-  width: 80%;
+  width: 100%;
   margin: 2rem auto 1rem;
   display: flex;
   justify-content: center;
@@ -79,10 +79,12 @@ a {
 }
 
 .note {
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
+  margin: auto;
 }
 
 .note h3 {
@@ -111,6 +113,7 @@ a {
   display: flex;
   gap: 1rem;
   align-items: center;
+  margin: 10%;
 }
 
 .profile img {
@@ -139,6 +142,8 @@ a {
   background: var(--light-grayish-blue);
   padding: 0.7rem;
   border-radius: 50%;
+  position: relative;
+  right: 3rem;
 }
 
 @media screen and (min-width: 40rem) {
@@ -160,22 +165,31 @@ a {
     flex: 1.5;
     width: 100%;
     margin-right: 3rem;
-    
   }
 }
-
-.social{
-  display: block;
+.profile_section {
+  border-radius: 0 0 1rem 1rem;
 }
 
-.profile_section{
+.social {
   display: none;
+  /* display: flex; */
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 1rem 0;
+  margin-right: 0.5rem;
 }
 
-/* .footer:hover .profile_section{
-  display: none;
+.social h3 {
+  text-transform: uppercase;
+  color: var(--light-grayish-blue);
+  font-size: 1rem;
 }
 
-.footer:hover .social{
-  display: block;
-}  */
+.social_links{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
